@@ -8,7 +8,7 @@ def divisors():
         divisorList =  []
         if number == 0:
             print('All non-zero numbers are divisors of 0.')
-        elif number != 0:
+        else:
             for n in range(1,abs(number) + 1):
                 if number % n == 0:
                     divisorList.append(n)
@@ -26,6 +26,7 @@ def divisors():
     
     except ValueError:
         print('Your input is invalid.')
+        divisors()
 
-
+        
 divisors()
