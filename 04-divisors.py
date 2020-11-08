@@ -10,7 +10,7 @@ def divisors():
         divisors =  []
         if number == 0:
             print('All non-zero numbers are divisors of 0.')
-        elif number != 0:
+        else:
             for n in range(1,abs(number) + 1):
                 if number % n == 0:
                     divisors.append(n)
@@ -25,6 +25,7 @@ def divisors():
 
 def another():
     # The user is given the choice to continue with another number or finish the program.
+    # I tried using a while loop, but without an input from the user, the loop is infinite, necessitating the use of ctrl+c to stop the program.
     decision = input('Write "y" or "yes" to continue or anything else to quit: ')
     
     if decision.lower() in ['y', 'yes']:
